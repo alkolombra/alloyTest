@@ -1,0 +1,2 @@
+ffmpeg -i "concat:music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3|music.mp3" -c copy long_music.mp3
+pause

@@ -1,0 +1,1 @@
+ffmpeg.exe -ss 10 -i c:\users\sahar\sites\rc\public\records\sahar_1361442835864.mp4 -vcodec mjpeg -vframes 1 -an -f rawvideo -s 120x90 -y i.jpg

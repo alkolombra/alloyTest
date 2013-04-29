@@ -1,0 +1,2 @@
+ffmpeg.exe -f mjpeg -i http://192.168.1.2:18390/cam_1.cgi -i music.mp3 -shortest -i box_template_2_RENDER.png -i mediamagic_logo.png -filter_complex overlay[tmp];[tmp]overlay=10:10 outputvideo.mp4
+pause

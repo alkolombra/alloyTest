@@ -1,0 +1,59 @@
+button(ng-click="toggleTooltip(true)") Show Tooltip
+button(ng-click="toggleTooltip(false)") Hide Tooltip
+br
+br
+input(type="text", placeholder="tooltip text", ng-model="text", style="width:500px;")
+select(ng-model="color")
+	option(value="white", ng-selected="true") White
+	option(value="green") Green
+	option(value="yellow") Yellow
+	option(value="red") Red
+	option(value="blue") Blue
+select(ng-model="fontSize")
+	option(value="10px") 10px
+	option(value="12px", ng-selected="true") 12px
+	option(value="14px") 14px
+	option(value="16px") 16px
+	option(value="18px") 18px
+	option(value="20px") 20px
+button(ng-click="updateText()") Update Text
+br
+br
+span Set Background Color
+select(ng-model="backgroundColor")
+	option(value="white", ng-selected="true") White
+	option(value="green") Green
+	option(value="yellow") Yellow
+	option(value="red") Red
+	option(value="blue") Blue
+br
+br
+span Set Shadow
+select(ng-model="shadow")
+	option(value="false", ng-selected="true") false
+	option(value="true") true
+br
+br
+span Set Pointer
+select(ng-model="pointer")
+	option(value="TOP_LEFT") Top Left
+	option(value="TOP", ng-selected="true") Top
+	option(value="TOP_RIGHT") Top Right
+	option(value="BOTTOM_LEFT") Bottom Left
+	option(value="BOTTOM") Bottom
+	option(value="BOTTOM_RIGHT") Bottom Right
+br
+br
+span Set Size
+input(type="text", placeholder="width", value="150", ng-model="width", style="width:40px;text-align:center;")
+span X
+input(type="text", placeholder="height", value="60", ng-model="height", style="width:40px;text-align:center;")
+button(ng-click="updateSize()") Update Size
+br
+br
+span Set Position
+input(type="text", placeholder="top", ng-model="position.top", style="width:40px;text-align:center;")
+input(type="text", placeholder="left",  ng-model="position.left", style="width:40px;text-align:center;")
+input(type="text", placeholder="right", ng-model="position.right", style="width:40px;text-align:center;")
+input(type="text", placeholder="bottom", ng-model="position.bottom", style="width:40px;text-align:center;")
+button(ng-click="updatePosition()") Update Position

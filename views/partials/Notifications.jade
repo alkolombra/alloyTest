@@ -1,0 +1,16 @@
+span Select App Type: 
+select(ng-model="appKey")
+	option(value="9JL67kIDIBabgiY8YYA10rFJTDeAKaG4", ng-selected="true") Development
+	option(value="IzH4a3EbUUvQiqOhcTuor0ezC29jbEk0") Production
+br
+span Select Sound: 
+select(ng-model="sound")
+	option(value="default", ng-selected="true") Default
+	option(value="./sounds/sms-received1.caf") Sound1
+	option(value="./sounds/sms-received2.caf") Sound2
+br
+input(type="text", placeholder="channel name", ng-model="channel", style="width:200px;")
+br
+input(type="text", placeholder="notification", ng-model="notification", style="width:400px;")
+br
+button(ng-click="sendNotification()", ng-disabled="!logged") Send

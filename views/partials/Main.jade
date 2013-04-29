@@ -1,0 +1,9 @@
+input(type="text", placeholder="notification message", style="width:400px;", ng-model="notification.message")
+button(ng-click="sendNotification()") Send
+br
+select(ng-model="notificationToDelete")
+	option(ng-repeat="notification in notifications", value="{{notification.id}}") {{notification.id}}
+button(ng-click="deleteNotification()") Delete
+br
+button(ng-click="deleteNotifications()") Delete All
+pre(ng-bind="notifications | json")

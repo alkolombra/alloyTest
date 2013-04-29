@@ -1,0 +1,14 @@
+button(ng-click="startMarquee()") Start Marquee
+button(ng-click="stopMarquee()") Stop Marquee
+button(ng-click="resetMarquee()") Reset Marquee
+br
+select(ng-model="direction")
+	option(value="left", ng-selected="true") left
+	option(value="right") right
+br
+input(type="text", placeholder="array of data", style="width:500px;", ng-model="marqueeRow")
+button(ng-click="addMarqueeRow()") Add Row
+br
+button(ng-click="updateMarquee()") Update Marquee Data
+button(ng-click="resetMarqueeData()") Reset Marquee Data
+pre(ng-bind="marqueeData | json")

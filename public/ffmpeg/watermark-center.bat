@@ -1,0 +1,1 @@
+ffmpeg -i input.mp4 -vf "movie=angular.png [watermark]; [in][watermark] overlay=main_w/2-overlay_w/2:main_h/2-overlay_h/2 [out]" outputvideo.mp4

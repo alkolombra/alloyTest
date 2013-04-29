@@ -1,0 +1,9 @@
+# ignore the static directory
+/public/*
+*.css
+*.min.js
+*.mov
+*.jpg
+*.mp3
+*.mp4
+*.wav
